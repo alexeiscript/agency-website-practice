@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 //Pages
 import Home from './components/Pages/Home';
 import About from './components/Pages/About';
+import Team from './components/Pages/Team';
 
 function App() {
   return (
@@ -19,6 +20,11 @@ function App() {
           <Route 
             path="/about"
             component={About}
+          />
+
+          <Route 
+            path="/team"
+            component={Team}
           />
 
       </PageWrapper>
