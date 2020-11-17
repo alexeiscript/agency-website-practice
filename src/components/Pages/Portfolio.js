@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Portfoliotem from './PortfolioItem';
+import Portfoliotem from '../Common/PortfolioItem';
 
 import img1 from '../assets/img/portfolio/01-thumbnail.jpg';
 import img2 from '../assets/img/portfolio/02-thumbnail.jpg';
