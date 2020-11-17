@@ -3,8 +3,9 @@ import Header from '../Common/Header';
 import image from '../assets/img/map-image.jpg';
 
 // Re-usable components
-import Services from '../Common/Services';
-import Portfolio from '../Common/Portfolio';
+import Contact from '../Common/Contact';
+import Footer from '../Common/Footer';
+
 
 class Home extends Component {
     render() {
@@ -19,8 +20,8 @@ class Home extends Component {
                     image={image}
                 />
 
-                <Services />
-                <Portfolio />
+                <Contact />
+                <Footer />
             </div>
         );
     }

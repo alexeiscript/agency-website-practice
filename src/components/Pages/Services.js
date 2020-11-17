@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import SingleService from './SingleService';
+import SingleService from '../Common/SingleService';
 
 const services = [
     {title: 'E-Commerce', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.', icon: 'fa-shopping-cart'},
