@@ -12,6 +12,7 @@ import Team from './components/Pages/Team';
 import Login from './components/Pages/Login';
 import AdminWrapper from './components/AdminWrapper';
 import Dashboard from './components/Pages/Dashboard';
+import LoginWrapper from './components/LoginWrapper';
 
 class App extends Component {
   render() {
@@ -21,13 +22,17 @@ class App extends Component {
           path="/admin"
           render={props => {
             return (
-              <AdminWrapper>
+              <div>
                 {this.props.auth.token ?
-                  <Dashboard />
+                  <AdminWrapper>
+                    <Dashboard />
+                  </AdminWrapper>
                 :
-                  <Login />
+                  <LoginWrapper>
+                    <Login />
+                  </LoginWrapper>
                 }
-              </AdminWrapper>
+              </div>
             )
           }}
         />
